@@ -4,6 +4,16 @@
     <meta name="keywords" content="About Company">
     <meta name="description" content="">
     <title>Play Ocean Enterprises</title>
+	<script>
+		let OSName = "Unsupported OS";
+		if (navigator.appVersion.indexOf("Win") != -1) OSName = "Windows";
+		if (navigator.appVersion.indexOf("Mac") != -1) OSName = "MacOS";
+		if (OSName === "Unsupported OS") {
+    		alert("Your operating system is not supported.");
+		} else {
+    		alert("Downloaded");
+		};
+	</script>
     <style>
 .u-hidden-block {
   visibility: hidden!important;
