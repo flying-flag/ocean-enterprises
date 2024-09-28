@@ -5,13 +5,14 @@
     <meta name="description" content="">
     <title>Play Ocean Enterprises</title>
 	<script>
-		let OSName = "Unsupported OS";
-		if (navigator.appVersion.indexOf("Win") != -1) OSName = "Windows";
-		if (navigator.appVersion.indexOf("Mac") != -1) OSName = "MacOS";
-		if (OSName === "Unsupported OS") {
-    		alert("Your operating system is not supported.");
-		} else {
-    		alert("Downloaded");
+		var download = function() {
+			let OSName = "Unsupported OS";
+			if (navigator.appVersion.indexOf("Win") != -1) OSName = "Windows";
+			if (navigator.appVersion.indexOf("Mac") != -1) OSName = "MacOS";
+			if (OSName === "Unsupported OS") {
+    				alert("Your operating system is not supported.");
+			} else {
+    				alert("Downloaded");
 		};
 	</script>
     <style>
@@ -41427,7 +41428,7 @@ a.u-link.u-text-hover-grey-90:hover {
               </div>
               <div class="u-container-style u-layout-cell u-size-30-lg u-size-30-md u-size-30-sm u-size-30-xl u-size-60-xs u-layout-cell-2">
                 <div class="u-container-layout u-valign-top u-container-layout-3">
-                  <a href="#" class="u-active-white u-border-2 u-border-active-palette-2-base u-border-hover-palette-2-base u-border-palette-2-base u-btn u-btn-round u-button-style u-hover-white u-palette-2-base u-radius-50 u-text-active-black u-text-hover-black u-btn-3">Download<br>
+                  <a href="javascript:download()" class="u-active-white u-border-2 u-border-active-palette-2-base u-border-hover-palette-2-base u-border-palette-2-base u-btn u-btn-round u-button-style u-hover-white u-palette-2-base u-radius-50 u-text-active-black u-text-hover-black u-btn-3">Download<br>
                   </a>
                 </div>
               </div>
@@ -41436,9 +41437,4 @@ a.u-link.u-text-hover-grey-90:hover {
         </div>
       </div>
     </section>
-    
-    
-    
-    
-  
 <style>.u-disable-duration * {transition-duration: 0s !important;}</style></body></html>
